@@ -1,60 +1,24 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 
-public class Autocenter : MonoBehaviour {
-	
-	private Bounds totalBounds;
+namespace PiXYZ.Plugin.Unity.Samples.AdvancedViewer {
 
-	// Update is called once per frame
-	void Update () {
+    public class Autocenter : MonoBehaviour {
 
-        Bounds? nbounds = GetTreeBounds(transform);
+        private Bounds totalBounds;
 
-        if (nbounds == null)
-            return;
+        void Update() {
 
-        totalBounds = (Bounds)nbounds;
+            Bounds? nbounds = transform.GetTreeBounds();
 
-        Vector3 worldbounds = totalBounds.center;
+            if (nbounds == null)
+                return;
 
-		foreach(Transform grandChild in this.transform)
-			grandChild.Translate(-worldbounds.x, 0, -worldbounds.z, this.transform);
-	}
+            totalBounds = (Bounds)nbounds;
 
-    public static Bounds? GetTreeBounds(Transform transform) {
+            Vector3 worldbounds = totalBounds.center;
 
-        bool first = true;
-        Bounds bounds = new Bounds();
-
-        Stack<Transform> tsms = new Stack<Transform>();
-        tsms.Push(transform);
-
-        Renderer renderer;
-
-        while (tsms.Count != 0) {
-
-            Transform current = tsms.Pop();
-            renderer = current.GetComponent<Renderer>();
-
-            if (renderer != null) {
-                if (first) {
-                    first = false;
-                    bounds = renderer.bounds;
-                }
-                else {
-                    bounds.Encapsulate(renderer.bounds);
-                }
-            }
-
-            foreach (Transform child in current) {
-                tsms.Push(child);
-            }
+            foreach (Transform grandChild in this.transform)
+                grandChild.Translate(-worldbounds, this.transform);
         }
-
-        if (first)
-            return null;
-
-        return bounds;
     }
 }
