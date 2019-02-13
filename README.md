@@ -2,13 +2,13 @@
 Samples for the PiXYZ PLUGIN for Unity
 
 ## How to use ?
-Clone or download repository.
-Open root folder as an Unity Project, import the PiXYZ PLUGIN for Unity from [PiXYZ Website Downloads Page](https://www.pixyz-software.com/download/) and browse through samples.
+Download the .unitypackage for your plugin version in Releases and import it in your Unity project.
+A PiXYZ Plugin for Unity is required (licensed *or* trial)
 All samples sources are included.
 
 ## Requirements
-- **PiXYZ PLUGIN for Unity 2018.3** (licensed *or* trial)
-- **Unity 2018.1, 2018.2 or 2018.3** (pro *or* free)
+- **PiXYZ PLUGIN for Unity 2018.3**
+- **Unity 2018.1, 2018.2 or 2018.3**
 
 # Samples
 
