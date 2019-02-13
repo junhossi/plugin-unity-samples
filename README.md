@@ -3,7 +3,7 @@ Samples for the PiXYZ PLUGIN for Unity
 
 ## How to use ?
 Download the .unitypackage for your plugin version in Releases and import it in your Unity project.
-A PiXYZ Plugin for Unity is required (licensed *or* trial)
+A PiXYZ Plugin for Unity is required (licensed *or* trial).
 All samples sources are included.
 
 ## Requirements
