@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-using PiXYZ.Plugin.Unity.Tools;
+using PiXYZ.Tools;
 
 public class IncreaseMaterialSpecularity : ActionInOut<IList<Material>, IList<Material>> {
 

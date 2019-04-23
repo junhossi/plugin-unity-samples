@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using PiXYZ.Plugin.Unity;
+using PiXYZ.Config;
 
 public class CurrentLicenseScript : MonoBehaviour
 {
@@ -36,8 +36,8 @@ public class CurrentLicenseScript : MonoBehaviour
                     values = new string[] {
                         "Floating",
                         "",
-                        Configuration.CurrentLicenseServer.ServerAddress,
-                        Configuration.CurrentLicenseServer.ServerPort.ToString()
+                        Configuration.CurrentLicenseServer.serverAddress,
+                        Configuration.CurrentLicenseServer.serverPort.ToString()
                     };
                 }
                 else
@@ -51,11 +51,11 @@ public class CurrentLicenseScript : MonoBehaviour
                     };
                     Configuration.RetrieveCurrentLicense();
                     values = new string[] {
-                        Configuration.CurrentLicense.StartDate.ToString("yy-MM-dd"),
-                        Configuration.CurrentLicense.EndDate.ToString("yy-MM-dd"),
-                        Configuration.CurrentLicense.CustomerCompany,
-                        Configuration.CurrentLicense.CustomerName,
-                        Configuration.CurrentLicense.CustomerEmail,
+                        Configuration.CurrentLicense.startDate.ToString(),
+                        Configuration.CurrentLicense.endDate.ToString(),
+                        Configuration.CurrentLicense.customerCompany,
+                        Configuration.CurrentLicense.customerName,
+                        Configuration.CurrentLicense.customerEmail,
                     };
                 }
 

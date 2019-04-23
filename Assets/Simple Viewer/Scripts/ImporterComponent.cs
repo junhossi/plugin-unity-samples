@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
-using System.Linq;
-using PiXYZ.Plugin.Unity;
+using PiXYZ.Import;
 using System;
 
 public class ImporterComponent : MonoBehaviour {

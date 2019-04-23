@@ -1,9 +1,8 @@
-﻿using PiXYZ.PiXYZImportScript;
-using PiXYZ.Plugin.Unity;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using PiXYZ.Config;
 
 public class OnlineUI : MonoBehaviour
 {
@@ -29,8 +28,8 @@ public class OnlineUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        onlineCreds.gameObject.SetActive(!Configuration.ConnectedToWebServer);
-        onlineWin.gameObject.SetActive(Configuration.ConnectedToWebServer);
+        onlineCreds.gameObject.SetActive(!Configuration.IsConnectedToWebServer());
+        onlineWin.gameObject.SetActive(Configuration.IsConnectedToWebServer());
     }
 
     public void connect()
@@ -58,9 +57,9 @@ public class OnlineUI : MonoBehaviour
         int index = licenseList.value;
         licenseList.ClearOptions();
         List<string> options = new List<string>();
-        for (int i = 0; i < Configuration.Licenses.Length(); ++i)
+        for (int i = 0; i < Configuration.Licenses.length; ++i)
         {
-            string option = "License " + (i + 1) + ": " + Configuration.Licenses[i].product + "  [" + Configuration.Licenses[i].validity.ToUnityObject().ToString("yy-MM-dd") + "]";
+            string option = "License " + (i + 1) + ": " + Configuration.Licenses[i].product + "  [" + Configuration.Licenses[i].validity.ToString() + "]";
             if (Configuration.Licenses[i].onMachine)
                 option += "  (installed)";
             options.Add(option);
@@ -77,7 +76,7 @@ public class OnlineUI : MonoBehaviour
         string remainingTextColor = daysRemaining > 185 ? "green" : daysRemaining > 92 ? "orange" : "red";
         bool installed = info.onMachine;
         string productName = info.product;
-        string validity = info.validity.ToUnityObject().ToString("yy-MM-dd")
+        string validity = info.validity.ToString()
             + "   (<color='" + remainingTextColor + "'><b>" + daysRemaining + "</b> Day" + (daysRemaining > 1 ? "s" : "") + " remaining</color>)";
         string licenseUse = "" + (int)info.inUse + " / " + (int)info.count;
         string currentlyInstalled = installed ? "<color='green'>true</color>" : "false";
@@ -99,7 +98,7 @@ public class OnlineUI : MonoBehaviour
     {
         try
         {
-            Configuration.RequestWebLicense(licenseList.value);
+            Configuration.RequestWebLicense(Configuration.Licenses[licenseList.value]);
         }
         catch (Exception e)
         {
@@ -111,7 +110,7 @@ public class OnlineUI : MonoBehaviour
     {
         try
         {
-            Configuration.ReleaseWebLicense(licenseList.value);
+            Configuration.ReleaseWebLicense(Configuration.Licenses[licenseList.value]);
         }
         catch (Exception e)
         {

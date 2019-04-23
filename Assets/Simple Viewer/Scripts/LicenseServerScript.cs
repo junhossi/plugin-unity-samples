@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
-using PiXYZ.PiXYZImportScript;
-using PiXYZ.Plugin.Unity;
+using PiXYZ.Config;
 
 public class LicenseServerScript : MonoBehaviour {
 
@@ -15,8 +14,8 @@ public class LicenseServerScript : MonoBehaviour {
     {
         if (Configuration.CurrentLicenseServer == null)
             return;
-        if (address.text == "") { address.text = Configuration.CurrentLicenseServer.ServerAddress; flexLM = Configuration.CurrentLicenseServer.UseFlexLM; }
-        if (port.text == "") { port.text = Configuration.CurrentLicenseServer.ServerPort.ToString(); flexLM = Configuration.CurrentLicenseServer.UseFlexLM; }
+        if (address.text == "") { address.text = Configuration.CurrentLicenseServer.serverAddress; flexLM = Configuration.CurrentLicenseServer.useFlexLM; }
+        if (port.text == "") { port.text = Configuration.CurrentLicenseServer.serverPort.ToString(); flexLM = Configuration.CurrentLicenseServer.useFlexLM; }
     }
 
     public void apply()

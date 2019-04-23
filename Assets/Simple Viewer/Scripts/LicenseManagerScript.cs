@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
-using PiXYZ.PiXYZImportScript;
 using System.IO;
 using System;
-using PiXYZ.Plugin.Unity;
+using PiXYZ.Config;
 
 public class LicenseManagerScript : MonoBehaviour {
 

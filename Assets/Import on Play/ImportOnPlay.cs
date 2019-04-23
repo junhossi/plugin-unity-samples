@@ -1,6 +1,5 @@
-﻿using PiXYZ.Plugin.Unity;
-using System.IO;
-using UnityEngine;
+﻿using UnityEngine;
+using PiXYZ.Import;
 
 public class ImportOnPlay : MonoBehaviour {
 

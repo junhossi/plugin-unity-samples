@@ -2,6 +2,7 @@
 using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
+using PiXYZ.Import;
 
 namespace PiXYZ.Plugin.Unity.Samples.AdvancedViewer {
 
