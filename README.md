@@ -1,6 +1,8 @@
 # Plugin for Unity Samples
 Samples for the PiXYZ PLUGIN for Unity
 
+![Screenshot](https://raw.githubusercontent.com/PiXYZ-Software/plugin-for-unity-samples/2019.1/Demo/advanced_viewer.png)
+
 ## How to use ?
 Download the .unitypackage for your plugin version in Releases and import it in your Unity project.
 A PiXYZ Plugin for Unity is required (licensed *or* trial).
