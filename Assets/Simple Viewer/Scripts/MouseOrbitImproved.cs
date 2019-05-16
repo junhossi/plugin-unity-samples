@@ -46,7 +46,7 @@ namespace PiXYZ.Plugin.Unity.Samples.AdvancedViewer {
         }
 
         void OnPostRender() {
-            if (!isMouseOverUI && (Input.GetMouseButton(0) || Input.touches.Length > 0)) {
+            if (lineMaterial && !isMouseOverUI && (Input.GetMouseButton(0) || Input.touches.Length > 0)) {
                 GL.PushMatrix();
                 GL.Begin(GL.LINES);
                 lineMaterial?.SetPass(0);
