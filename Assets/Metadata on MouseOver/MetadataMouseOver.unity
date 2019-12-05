@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.56722206, g: 0.56656325, b: 0.56722206, a: 1}
+  m_IndirectSpecularColor: {r: 0.56729966, g: 0.56653494, b: 0.56729966, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -94,8 +94,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -209,7 +209,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &534669902
 GameObject:
@@ -292,7 +292,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &543403267
 GameObject:
@@ -336,7 +336,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &722866737
 MonoBehaviour:
@@ -350,36 +350,6 @@ MonoBehaviour:
   m_Script: {fileID: -431955957, guid: 4c77e143aa0c37d498d4c8d9dcbfb570, type: 3}
   m_Name: Default Import Settings(Clone)
   m_EditorClassIdentifier: 
-  loadMetadata: 1
-  importLines: 0
-  importPatchBorders: 0
-  scaleFactor: 0.001
-  isLeftHanded: 0
-  isZUp: 1
-  mergeFinalLevel: 0
-  treeProcess: 0
-  repair: 1
-  hasLODs: 0
-  lodsMode: 1
-  qualities:
-    _lods:
-    - quality: 1
-      threshold: 0.3
-    - quality: 3
-      threshold: 0.1
-    - quality: 5
-      threshold: 0
-    _locked: 1
-  mapUV: 0
-  mapUV3dSize: 1
-  createLightmapUV: 0
-  lightmapResolution: 1024
-  uvPadding: 4
-  orient: 0
-  splitTo16BytesIndex: 0
-  shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  useMaterialsInResources: 0
-  singularizeSymmetries: 1
 --- !u!1 &802762955
 GameObject:
   m_ObjectHideFlags: 1
@@ -389,8 +359,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 802762957}
-  - component: {fileID: 802762956}
-  - component: {fileID: 802762958}
   m_Layer: 0
   m_Name: __MonoContext__
   m_TagString: Untagged
@@ -398,18 +366,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &802762956
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 802762955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 691297538, guid: 4c77e143aa0c37d498d4c8d9dcbfb570, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &802762957
 Transform:
   m_ObjectHideFlags: 1
@@ -422,20 +378,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &802762958
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 802762955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -401281998, guid: 4c77e143aa0c37d498d4c8d9dcbfb570, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3623836987327589996
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,20 +1,20 @@
-fileFormatVersion: 2
+fileFormatVersion: &1954678658 2
 guid: b15b6e1f0c90d22448f23af07d926392
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable: &866063966 []
   externalObjects: {}
-  serializedVersion: 10
+  &415078967 serializedVersion: 10
   mipmaps:
-    mipMapMode: 0
+    mipMapMode: &1379409097 0
     enableMipMap: 0
-    sRGBTexture: 1
+    sRGBTexture: &271709116 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapsPreserveCoverage: 0
-    alphaTestReferenceValue: 0.5
+    alphaTestReferenceValue: &944281796 0.5
     mipMapFadeDistanceStart: 1
-    mipMapFadeDistanceEnd: 3
+    mipMapFadeDistanceEnd: &789621325 3
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
@@ -27,11 +27,11 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: 1
-  maxTextureSize: 2048
+  &46081724 textureFormat: 1
+  &949571651 maxTextureSize: &2076919920 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: &191385980 -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -39,12 +39,12 @@ TextureImporter:
     wrapW: -1
   nPOTScale: 0
   lightmap: 0
-  compressionQuality: 50
+  &354159690 compressionQuality: &153240237 50
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  spritePivot: {&1470067597 x: 0.5, &1866214172 y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -59,17 +59,17 @@ TextureImporter:
   textureFormatSet: 0
   platformSettings:
   - serializedVersion: 3
-    buildTarget: DefaultTexturePlatform
+    &817921500 buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
+    &465286684 resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    &1923154274 textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    &1675029139 crunchedCompression: 0
+    &935756837 allowsAlphaSplitting: 0
+    &1384265494 overridden: 0
+    &178899407 androidETC2FallbackOverride: 0
+    &1362394599 forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -91,13 +91,13 @@ TextureImporter:
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
-    indices: 
+    indices: &490685871 ''
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+  spritePackingTag: ''
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  userData: ''
+  assetBundleName: ''
+  assetBundleVariant: ''
