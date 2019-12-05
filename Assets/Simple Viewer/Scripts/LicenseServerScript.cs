@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Events;
 using PiXYZ.Config;
+using PiXYZ.Plugin4Unity;
 
 namespace PiXYZ.Samples
 {
@@ -9,20 +9,26 @@ namespace PiXYZ.Samples
     {
         public InputField address;
         public InputField port;
-        public bool flexLM;
+        public Toggle flexLM;
         public ErrorWinScript errorWindow;
 
         private void OnEnable()
         {
             if (Configuration.CurrentLicenseServer == null)
                 return;
-            if (address.text == "") { address.text = Configuration.CurrentLicenseServer.serverAddress; flexLM = Configuration.CurrentLicenseServer.useFlexLM; }
-            if (port.text == "") { port.text = Configuration.CurrentLicenseServer.serverPort.ToString(); flexLM = Configuration.CurrentLicenseServer.useFlexLM; }
+            if (string.IsNullOrEmpty(address.text)) {
+                address.text = Configuration.CurrentLicenseServer.serverAddress;
+                flexLM.isOn = Configuration.CurrentLicenseServer.useFlexLM;
+            }
+            if (string.IsNullOrEmpty(port.text)) {
+                port.text = Configuration.CurrentLicenseServer.serverPort.ToString();
+                flexLM.isOn = Configuration.CurrentLicenseServer.useFlexLM;
+            }
         }
 
         public void apply()
         {
-            Configuration.ConfigureLicenseServer(address.text, ushort.Parse(port.text), flexLM);
+            Configuration.ConfigureLicenseServer(address.text, ushort.Parse(port.text), flexLM.isOn);
         }
     }
 }
