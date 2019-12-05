@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace PiXYZ.Plugin.Unity.Samples.AdvancedViewer {
-
-    [AddComponentMenu("Camera-Control/Mouse Orbit with zoom")]
+namespace PiXYZ.Samples
+{
     public class MouseOrbitImproved : MonoBehaviour {
 
         public Material lineMaterial;

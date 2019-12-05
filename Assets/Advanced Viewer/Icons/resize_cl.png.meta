@@ -1,0 +1,99 @@
+fileFormatVersion: &616241932 2
+guid: 4dfe09e686216514a89b9518b999e567
+TextureImporter:
+  fileIDToRecycleName: &806663087 {}
+  externalObjects: {}
+  &1892094773 serializedVersion: &2083047680 7
+  mipmaps:
+    mipMapMode: &40226791 0
+    enableMipMap: 0
+    sRGBTexture: &2030654480 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: &1189491157 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  &222044316 textureFormat: 1
+  &1361211772 maxTextureSize: &1826842829 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: &936422910 -1
+    aniso: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  &2103982155 compressionQuality: &337991584 50
+  spriteMode: 0
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {&163140121 x: 0.5, &203935912 y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 7
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    &1004929125 buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    &709959484 resizeAlgorithm: 0
+    textureFormat: -1
+    &165670941 textureCompression: 1
+    compressionQuality: 50
+    &2024692143 crunchedCompression: 0
+    &633296076 allowsAlphaSplitting: 0
+    &1554103910 overridden: 0
+    &204338817 androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites: &254658492 []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: &390392718 ''
+    vertices: []
+    indices: ''
+    edges: []
+    weights: []
+  spritePackingTag: ''
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: ''
+  assetBundleName: ''
+  assetBundleVariant: ''

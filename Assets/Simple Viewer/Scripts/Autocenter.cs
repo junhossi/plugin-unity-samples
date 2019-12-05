@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
-namespace PiXYZ.Plugin.Unity.Samples.AdvancedViewer {
-
+namespace PiXYZ.Samples
+{
     public class Autocenter : MonoBehaviour {
 
         private Bounds totalBounds;

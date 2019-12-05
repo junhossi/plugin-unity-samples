@@ -1,5 +1,6 @@
 // MiniEngine SSAO for Unity
 // https://github.com/keijiro/MiniEngineAO
+#pragma warning disable CS0649
 
 using UnityEngine;
 using UnityEngine.Rendering;

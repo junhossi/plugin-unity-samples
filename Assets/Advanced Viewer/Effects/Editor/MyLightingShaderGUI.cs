@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿#pragma warning disable CS0618
+#pragma warning disable CS0612
+
+using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEditor;
 

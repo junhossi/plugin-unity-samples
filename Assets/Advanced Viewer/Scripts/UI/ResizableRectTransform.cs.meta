@@ -1,0 +1,16 @@
+fileFormatVersion: &915910361 2
+&975469180 guid: 070b1cb5a63637f4884f13b462c17c97
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cursorResizeH: {&1587836427 fileID: &1829666690 2800000, guid: 6e3fe942543ef084ca9782461a5cfc57, &486911050 type: &625540759 3}
+  - cursorResizeV: {fileID: 2800000, guid: 42df76618a55fa24b853f8960199deb2, type: 3}
+  - cursorResizeCR: {fileID: 2800000, guid: 5163476a28d248e499bba06092d72278, type: 3}
+  - cursorResizeCL: {fileID: 2800000, guid: 4dfe09e686216514a89b9518b999e567, type: 3}
+  - cursorMove: {fileID: 2800000, guid: c05464dd014cae84eaf650f3b60a1b7e, type: 3}
+  executionOrder: &605241736 0
+  icon: {instanceID: 0}
+  userData: &728456166 ''
+  assetBundleName: ''
+  assetBundleVariant: ''

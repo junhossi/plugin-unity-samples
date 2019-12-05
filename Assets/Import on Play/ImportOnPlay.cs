@@ -1,28 +1,35 @@
 ﻿using UnityEngine;
 using PiXYZ.Import;
 
-public class ImportOnPlay : MonoBehaviour {
+namespace PiXYZ.Samples
+{
+    public class ImportOnPlay : MonoBehaviour
+    {
+        public ImportSettings importSettings;
+        public string filePath;
 
-    public ImportSettings importSettings;
-    public string filePath;
+        private void Start()
+        {
+            import();
+        }
 
-    private void Start() {
-        import();
-    }
+        void import()
+        {
+            string fullPath = Application.dataPath + "/" + filePath;
+            Importer importer = new Importer(fullPath, importSettings);
+            importer.progressed += onProgressChanged;
+            importer.completed += onImportEnded;
+            importer.run();
+        }
 
-    void import() {
-        string fullPath = Application.dataPath + "/" + filePath;
-        Importer importer = new Importer(fullPath, importSettings);
-        importer.progressed += onProgressChanged;
-        importer.completed += onImportEnded;
-        importer.run();
-    }
+        void onImportEnded(GameObject gameObject)
+        {
+            Debug.Log("Model Imported");
+        }
 
-    void onImportEnded(GameObject gameObject) {
-        Debug.Log("Model Imported");
-    }
-
-    void onProgressChanged(float progress, string message) {
-        Debug.Log("Progress : " + 100f * progress + "%");
+        void onProgressChanged(float progress, string message)
+        {
+            Debug.Log("Progress : " + 100f * progress + "%");
+        }
     }
 }

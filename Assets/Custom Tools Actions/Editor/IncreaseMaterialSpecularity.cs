@@ -2,18 +2,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using PiXYZ.Tools;
 
-public class IncreaseMaterialSpecularity : ActionInOut<IList<Material>, IList<Material>> {
+namespace PiXYZ.Samples
+{
+    public class IncreaseGlossiness : ActionInOut<IList<Material>, IList<Material>>
+    {
+        [UserParameter]
+        public float increment = 0.1f;
 
-    [UserParameter]
-    public float aFloatParameter = 1f;
+        public override int id { get { return 13457840; } }
+        public override string menuPathRuleEngine { get { return "Custom/Increase Glossiness"; } }
+        public override string menuPathToolbox { get { return "Custom/Increase Glossiness"; } }
+        public override string tooltip { get { return "Increase Material Glossiness"; } }
 
-    public override int id { get { return 13457840;} }
-    public override string menuPathRuleEngine { get { return "Custom/Increase Material Specularity"; } }
-    public override string menuPathToolbox { get { return "Custom/Increase Material Specularity"; } }
-    public override string tooltip { get { return "Increase Material Specularity"; } }
-
-    public override IList<Material> run(IList<Material> input) {
-        /// Your code here
-        return input;
+        public override IList<Material> run(IList<Material> input)
+        {
+            foreach (Material material in input) {
+                material.SetFloat("_Glossiness", Mathf.Clamp(material.GetFloat("_Glossiness") + increment, 0f, 1f));
+            }
+            return input;
+        }
     }
 }
