@@ -1,3 +1,6 @@
+| :warning: The plugin IS compatible with Unity 2019.3, but the samples don't work on Unity 2019.3 since Unity's changes on their serialization system. |
+| --- |
+
 # Plugin for Unity Samples
 Samples for the PiXYZ PLUGIN for Unity
 
