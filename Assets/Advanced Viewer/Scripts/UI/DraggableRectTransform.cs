@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace PiXYZ.Samples
+namespace Pixyz.Samples
 {
     [RequireComponent(typeof(RectTransform))]
     public class DraggableRectTransform : MonoBehaviour {

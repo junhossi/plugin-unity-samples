@@ -1,8 +1,8 @@
-﻿using PiXYZ.Import;
+﻿using Pixyz.Import;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace PiXYZ.Samples
+namespace Pixyz.Samples
 {
     public class DisplayMetadataOnMouseOver : MonoBehaviour
     {

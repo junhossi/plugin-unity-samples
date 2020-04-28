@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace PiXYZ.Samples
+namespace Pixyz.Samples
 {
     public class MouseOrbitImproved : MonoBehaviour {
 

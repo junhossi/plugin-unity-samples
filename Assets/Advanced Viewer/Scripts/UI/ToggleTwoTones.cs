@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace PiXYZ.Samples
+namespace Pixyz.Samples
 {
     [RequireComponent(typeof(Toggle))]
     public class ToggleTwoTones : MonoBehaviour

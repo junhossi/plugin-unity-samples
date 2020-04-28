@@ -3,13 +3,13 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace PiXYZ.Samples
+namespace Pixyz.Samples
 {
-    [RequireComponent(typeof(Text))]
     public class Hierarchy : MonoBehaviour {
 
-        private RectTransform rectTransform;
-        private Text text;
+        public RectTransform rectTransform;
+        public Text text;
+
         private int lines;
         private HashSet<int> selected = new HashSet<int>();
 

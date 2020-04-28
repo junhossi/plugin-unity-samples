@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using PiXYZ.Config;
-using PiXYZ.Plugin4Unity;
+using Pixyz.Config;
+using Pixyz.Plugin4Unity;
 
-namespace PiXYZ.Samples
+namespace Pixyz.Samples
 {
     public class LicenseServerScript : MonoBehaviour
     {

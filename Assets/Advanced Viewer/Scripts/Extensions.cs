@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace PiXYZ.Samples
+namespace Pixyz.Samples
 {
     public static class Extensions
     {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using PiXYZ.Import;
+using Pixyz.Import;
 
-namespace PiXYZ.Samples
+namespace Pixyz.Samples
 {
     public class ImportOnPlay : MonoBehaviour
     {

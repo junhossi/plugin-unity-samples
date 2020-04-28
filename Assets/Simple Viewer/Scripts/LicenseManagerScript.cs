@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.IO;
 using System;
-using PiXYZ.Config;
+using Pixyz.Config;
 
-namespace PiXYZ.Samples
+namespace Pixyz.Samples
 {
     public class LicenseManagerScript : MonoBehaviour
     {

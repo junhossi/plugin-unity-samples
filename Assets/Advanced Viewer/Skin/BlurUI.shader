@@ -1,10 +1,8 @@
-﻿Shader "PiXYZ/Blurred UI" {
+﻿Shader "Pixyz/Blurred UI" {
 
 	Properties
 	{
-		[PerRendererData]
-		_MainTex("Srpite Texture", 2D) = "white" {}
-
+      _MainColor("Main Color", COLOR) = (1,1,1,1)
 		_Alpha("Alpha", Range(0, 1)) = 0.5
 
 		_KernelSize("Kernel Size", Range(5.0, 20.0)) = 5.0
@@ -41,7 +39,7 @@
 
 			#include "UnityCG.cginc"
 
-			sampler2D _MainTex;
+			float4 _MainColor;
 			sampler2D _GrabTexture;
 			float4 _GrabTexture_TexelSize;
 			float _Alpha;
@@ -81,7 +79,7 @@
 			{
 				half4 sum = half4(0, 0, 0, 0);
 
-				#define GRABPIXEL(kernelx, kernely) tex2Dproj( _GrabTexture, UNITY_PROJ_COORD(float4(i.uvgrab.x + _GrabTexture_TexelSize.x * kernelx, i.uvgrab.y + _GrabTexture_TexelSize.y * kernely, i.uvgrab.z, i.uvgrab.w)))
+				#define GRABPIXEL(kernelx, kernely) tex2Dproj(_GrabTexture, UNITY_PROJ_COORD(float4(i.uvgrab.x + _GrabTexture_TexelSize.x * kernelx, i.uvgrab.y + _GrabTexture_TexelSize.y * kernely, i.uvgrab.z, i.uvgrab.w)))
 				
 				int measurements = 0;
 
@@ -98,7 +96,7 @@
 					measurements += 8;
 				}
 				
-				return (1 - _Alpha) * sum / measurements + _Alpha * tex2D(_MainTex, i.uv);
+				return (1 - _Alpha) * sum / measurements + _Alpha * _MainColor;
 			}
 
 			ENDCG

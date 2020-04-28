@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using PiXYZ.Config;
+using Pixyz.Config;
+using Pixyz.Interface;
 
-namespace PiXYZ.Samples
+namespace Pixyz.Samples
 {
     public class CurrentLicenseScript : MonoBehaviour
     {
@@ -22,7 +23,7 @@ namespace PiXYZ.Samples
                     detailText.text = "";
                     infoText.text = "";
                     infoText.color = Color.black;
-                    infoText.fontSize = 14;
+                    infoText.fontSize = 16;
                     infoText.alignment = TextAnchor.MiddleLeft;
                     string[] names;
                     string[] values;
@@ -50,8 +51,8 @@ namespace PiXYZ.Samples
                     };
                         Configuration.RetrieveCurrentLicense();
                         values = new string[] {
-                        Configuration.CurrentLicense.startDate.ToString(),
-                        Configuration.CurrentLicense.endDate.ToString(),
+                        Configuration.CurrentLicense.startDate.ToUnityObject().ToString("yyyy-MM-dd"),
+                        Configuration.CurrentLicense.endDate.ToUnityObject().ToString("yyyy-MM-dd"),
                         Configuration.CurrentLicense.customerCompany,
                         Configuration.CurrentLicense.customerName,
                         Configuration.CurrentLicense.customerEmail,

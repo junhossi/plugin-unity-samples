@@ -2,15 +2,14 @@
 using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
-using PiXYZ.Import;
+using Pixyz.Import;
 
-namespace PiXYZ.Samples
+namespace Pixyz.Samples
 {
-    [RequireComponent(typeof(Text))]
     public class Properties : MonoBehaviour {
 
-        private RectTransform rectTransform;
-        private Text text;
+        public RectTransform rectTransform;
+        public Text text;
 
         void Awake() {
             Selection.SelectionChanged += Selection_SelectionChanged;

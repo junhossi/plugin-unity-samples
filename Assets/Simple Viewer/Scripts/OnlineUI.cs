@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using PiXYZ.Config;
-using PiXYZ.Interface;
-using PiXYZ.Plugin4Unity;
+using Pixyz.Config;
+using Pixyz.Interface;
+using Pixyz.Plugin4Unity;
 
-namespace PiXYZ.Samples
+namespace Pixyz.Samples
 {
     public class OnlineUI : MonoBehaviour
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace PiXYZ.Samples
+namespace Pixyz.Samples
 {
     public class ErrorWinScript : MonoBehaviour
     {

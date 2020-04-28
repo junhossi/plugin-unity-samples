@@ -1,17 +1,16 @@
-fileFormatVersion: &923001294 2
-&1949119608 guid: b200ceda39a40af43bbb16a879f0791f
-timeCreated: 1499146983
-licenseType: Pro
+fileFormatVersion: 2
+guid: 29717e7e7dbda8a47b26ee79cad4ead4
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - _downsample1Compute: {&1406904425 fileID: &553644056 7200000, guid: 659dc93a3764e164e8dafb2061ff317b, &779933461 type: &1364026702 3}
-  - _downsample2Compute: {fileID: 7200000, guid: dc4dd2f3a1157884e95a081b25b5731d, type: 3}
-  - _renderCompute: {fileID: 7200000, guid: e49d5d8e57b0515469bb1ef4bf07b8dd, type: 3}
-  - _upsampleCompute: {fileID: 7200000, guid: 2c3e5f47f9b262047ae010f239705186, type: 3}
-  - _blitShader: {fileID: 4800000, guid: 532f9473ecfa16148a1ecdb3b72a44e8, type: 3}
-  executionOrder: &1048289844 0
+  - _downsample1Compute: {fileID: 7200000, guid: ef3272fa31a0a2045a7664736d982ccb, type: 3}
+  - _downsample2Compute: {fileID: 7200000, guid: 3a7c310b4595c6541be87ac1649870d8, type: 3}
+  - _renderCompute: {fileID: 7200000, guid: 0ebc7e6dd9d2fb54f84fa244d1dd81b6, type: 3}
+  - _upsampleCompute: {fileID: 7200000, guid: 4fe0d0c97b945f047ae39463c200bd42, type: 3}
+  - _blitShader: {fileID: 4800000, guid: 54b01e680f476d74ab2df7521cbd03e6, type: 3}
+  executionOrder: 0
   icon: {instanceID: 0}
-  userData: &1747364833 ''
-  assetBundleName: ''
-  assetBundleVariant: ''
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
