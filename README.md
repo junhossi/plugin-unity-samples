@@ -1,8 +1,6 @@
 # Samples for the Pixyz Plugin for Unity
 
-### [Download PixyzPluginUnity-Samples-2020.1.unitypackage](https://gitlab.com/pixyz_co/support/plugin-unity/plugin-unity-samples/-/raw/releases/PixyzPluginUnity-Samples-2020.1.unitypackage)
-
-![Screenshot](https://raw.githubusercontent.com/pixyz-Software/plugin-unity-samples/master/Demo/advanced_viewer.png)
+![Screenshot](Demo/advanced_viewer.png)
 
 ## How to use ?
 Download the .unitypackage for your plugin version in Releases and import it in your Unity project.
