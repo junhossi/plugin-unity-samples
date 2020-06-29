@@ -27,12 +27,16 @@ namespace Pixyz.Samples
             if (!isOn) {
                 cb.normalColor = offColor;
                 cb.highlightedColor = offColor;
+#if UNITY_2019_1_OR_NEWER
                 cb.selectedColor = offColor;
+#endif
                 cb.pressedColor = offColor;
             } else {
                 cb.normalColor = onColor;
                 cb.highlightedColor = onColor;
+#if UNITY_2019_1_OR_NEWER
                 cb.selectedColor = onColor;
+#endif
                 cb.pressedColor = onColor;
             }
             toggle.colors = cb;
