@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 namespace Pixyz.Samples
 {
@@ -32,7 +31,6 @@ namespace Pixyz.Samples
         public void fit() {
             Bounds? boundsn = target.GetTreeBounds();
             if (boundsn == null) {
-                Debug.Log("cake");
                 return;
             }
 
