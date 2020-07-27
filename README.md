@@ -40,5 +40,5 @@ A more advanced viewer, that can be used as a boilerplate to create more complex
 > **Note:** This sample require runtime licensing. See [Licensing Policy](https://www.pixyz-software.com/documentations/html/2020.1/plugin4unity/LicensingPolicy.html) for more information.
 
 # Links
-[Scripting Documentation](https://www.pixyz-software.com/documentations/html/2019.2/plugin4unity/ScriptingDocumentation.html)
+[Scripting Documentation](https://www.pixyz-software.com/documentations/html/2020.1/plugin4unity/ScriptingDocumentation.html)
 [Youtube Tutorials](https://www.youtube.com/playlist?list=PLmJ9w2jarAcBDi_NtxWX4qF740j1e-bCR)
